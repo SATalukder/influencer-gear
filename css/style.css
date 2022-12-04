@@ -13,13 +13,67 @@ body {
     /* position: relative; */
 }
 
+/*--------------
+               header style
+-----------------------------  */
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.influencer-dir {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+
+}
+
+.menu-info {
+    width: 500px;
+
+    border: 1px solid;
+}
+
+.menu-info a {
+    text-decoration: none;
+    margin-right: 34px;
+}
+
+.menu {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+.fa-magnifying-glass {
+    border: 2px;
+    font-size: 18px;
+    color: #000000;
+
+}
+
+.fa-cart-shopping {
+    font-size: 24px;
+    color: #000000;
+}
+
 /*---------------------
    -----Top styles-----
 ------------------ */
+.influencer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .influencer-journey {
     border: 1px solid;
     width: 600px;
     height: 270px;
+    margin-left: 120px;
 }
 
 .head-title {
@@ -61,4 +115,45 @@ body {
 
 .fa-arrow-right {
     margin-left: 8px;
+}
+
+.instrument {
+    /* margin-top: 20px; */
+    width: 475px;
+    height: 475px;
+    opacity: 0.85;
+    border: 1px solid gray;
+    margin-right: 165px;
+
+}
+
+.camera {
+    width: 440px;
+    height: 414px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 2;
+    margin-top: 30px;
+
+}
+
+.back-ground {
+    position: relative;
+    z-index: 1;
+}
+
+/*-------------------------------
+----------------------- Media Queries--------------
+------------------------------------------------------------------ */
+
+/*----------- Mobile Devices--------- */
+@media only screen and (max-width:688px) {
+
+
+
+    .influencer-top {
+        width: 50%;
+        flex-direction: column;
+    }
+
 }
