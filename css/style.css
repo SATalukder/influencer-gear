@@ -29,7 +29,7 @@ nav {
     justify-content: space-around;
 
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .influencer-dir {
@@ -131,6 +131,7 @@ nav {
     opacity: 0.85;
     margin-left: 65px;
     margin-right: 165px;
+    margin-bottom: 70px;
 
 }
 
@@ -160,6 +161,7 @@ nav {
     /* background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%); */
     padding-top: 42px;
     padding-bottom: 42px;
+    margin-bottom: 100px;
 }
 
 
@@ -265,7 +267,7 @@ span .fa-arrow-right {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -322,6 +324,7 @@ span .fa-arrow-right {
 footer {
     width: 1440px;
     background-color: #0A0826;
+    margin-top: 100px;
 }
 
 .title {
@@ -380,9 +383,89 @@ footer {
 
 
 
-    .influencer-top {
+    main {
+
+        width: 360px;
+    }
+
+
+    .influencer-top,
+    .featured-products {
+        /* width: 100%; */
+        flex-direction: column-reverse;
+    }
+
+    .instrument {
+        width: 257px;
+        height: 257px;
+        padding-left: 51px;
+    }
+
+    .camera img {
         width: 50%;
+    }
+
+    .back-ground img {
+        width: 100%
+    }
+
+    .influencer-journey {
+        width: 354px;
+        height: 240px;
+        margin-left: 51px;
+        margin-bottom: 50px;
+    }
+
+    .logo {
         flex-direction: column;
     }
+
+    .container {
+        width: 329px;
+        height: 4504px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-products {
+        margin-top: 850px;
+        margin-left: 600px;
+    }
+
+    .product-thumbnail {
+        width: 499px;
+        height: 188px;
+    }
+
+    .product-thumbnail img {
+        width: 100%
+    }
+
+    .product-info {
+        margin-top: 50px;
+    }
+
+    .title {
+        text-align: left;
+        padding: 60px;
+    }
+
+
+
+
+
+
+}
+
+/*--------- ipad or tablet device-------------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 }
